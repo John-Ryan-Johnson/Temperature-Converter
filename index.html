@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="./main.css">
   <title>Temperature Converter</title>
 </head>
+
 <body>
- 
+  <h1>Temperature Converter</h1>
+  <div class="input text-center mt-5 mb-5">
+    <input type="input" id="number" name="temp">
+    <input type="radio" id="fahrenheit" name="degree"> Fahrenheit
+    <input type="radio" id="celsius" name="degree"> Celsius
+    <button type="submit" id="converter">Convert</button>
+  </div>
+  <div>
+    <div class="output text-center">
+      <h2>Converted Temperature</h2>
+      <button class="clear mt-3 mb-3">Clear</button>
+    </div>
+    <div class="output border border-outline-dark"></div>
+    
+  </div>
   <script src="./main.js"></script>
 </body>
+
 </html>
