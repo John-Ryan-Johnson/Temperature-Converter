@@ -1,6 +1,9 @@
-h1 {
-  text-align: center;
-  margin-top: 150px;
+body {
+  background-color: rgb(5, 168, 168);
+}
+
+#container {
+  margin-top: 10rem;
 }
 
 
