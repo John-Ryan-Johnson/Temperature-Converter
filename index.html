@@ -5,54 +5,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="./main.css">
   <title>Temperature Converter</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./main.css">
 </head>
 
 <body>
-  <div id="container">
-    <div class="d-flex row justify-content-center mt-5">
-      <div class="jumbotron my-auto">
-        <h1 class="display-4 text-center">Temperature Converter!</h1>
-        <p class="lead">Just type in a number and check Celsius or Fahrenheit. Then hit convert. Hit reset to start
-          over.
-        </p>
-        <hr class="my-4">
-        <form class='form-inline justify-content-center'>
-          <div class="form-group mx-sm-3 mb-2">
-            <label for="inputNumber" class="sr-only">Enter Number</label>
-            <input type="number" class="form-control" id="inputNumber2" placeholder="Enter number">
-          </div>
-          <div class="form-check ml-3">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-              checked>
-            <label class="form-check-label" for="exampleRadios1">
-              Celsius
-            </label>
-          </div>
-          <div class="form-check ml-3">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-              Fahrenheit
-            </label>
-            <button type="submit" class="btn btn-secondary mb-2 ml-5">Convert</button>
-          </div>
-        </form>
-        <form class='form-inline justify-content-center mt-3'>
-          <div class="form-group mx-sm-3 mt-3">
-            <label for="output" class="sr-only">Enter Number</label>
-            <input type="read-only" class="form-control" id="output2" placeholder="Answer...">
-          </div>
-          <button type="submit" class="btn btn-secondary mt-3 ml-5">Reset</button>
-        </form>
+  <h1>Temperature Converter</h1>
+
+  <div class="container d-flex justify-content-center mt-5">
+    <form>
+      <div class="form-group row justify-content-center">
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="number" placeholder="Enter a number">
+        </div>
       </div>
-
-    </div>
+      <fieldset class="form-group ">
+        <div class="row justify-content-center">
+          <div class="col-sm-5">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="fahRadio" value="option1">
+              <label class="form-check-label" for="fahRadio">
+                Fahrenheit
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="celRadios" value="option2">
+              <label class="form-check-label" for="celRadios">
+                Celsius
+              </label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <div class="form-group row justify-content-center">
+        <div class="col-sm-4">
+          <button type="button" class="btn btn-dark" id="reset">Clear</button>
+        </div>
+        <div class="col-sm-6">
+          <button type="button" class="btn btn-dark" id="converter">Convert</button>
+        </div>
+      </div>
+    </form>
   </div>
-  <script src="./main.js"> </script>
 
+  <div id="output"></div>
+
+
+  <script src="./main.js"></script>
 </body>
 
 </html>

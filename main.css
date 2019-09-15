@@ -1,15 +1,16 @@
 body {
-  background-color: rgb(5, 168, 168);
+  background-color: lightgray;
+  text-align: center;
 }
 
-#container {
-  margin-top: 10rem;
+h1 {
+  margin-top: 100px;
 }
 
-
-
-
-
-
-
-
+#output {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
