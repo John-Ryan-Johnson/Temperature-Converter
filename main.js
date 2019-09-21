@@ -8,9 +8,9 @@ const printToDOM = (divID, textToPrint) => {
 
 const toCelsius =  (temp) => {
     const newTemp = Math.round((temp - 32) * 5 / 9);
-    if (newTemp >= 32) {
+    if (newTemp > 33) {
         document.getElementById('output').style.color = 'red';
-    } else if (newTemp <= 0 ) {
+    } else if (newTemp < 1) {
         document.getElementById('output').style.color = 'blue';
     } else if (newTemp > 0 && newTemp < 32) {
         document.getElementById('output').style.color = 'green';
@@ -20,9 +20,9 @@ const toCelsius =  (temp) => {
 
 const toFahrenheit =  (temp) => {
     const newTemp = Math.round(temp * 9 / 5 + 32);
-    if (newTemp >= 90) {
+    if (newTemp > 89) {
         document.getElementById('output').style.color = 'red';
-    } else if (newTemp <= 32 ) {
+    } else if (newTemp < 33 ) {
         document.getElementById('output').style.color = 'blue';
     } else if (newTemp > 32 && newTemp < 90) {
         document.getElementById('output').style.color = 'green';
