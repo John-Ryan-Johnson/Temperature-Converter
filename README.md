@@ -1,4 +1,14 @@
-#TempConverter
+# TempConverter
+
+## Desciption
+Use application to convert fahrenheit to celsius or celsius to fahrenheit.
+
+## Screenshots
 
 
-blob:file:///7e7f6623-b351-4b11-ba03-8e49053e8a2d
+
+## How to run
+* Clone down this project
+*Install [http-server](url) from npm
+* At the root of this project run the following command: `hs -p 8888`;
+* In your browser navigate to `https://localhost:8888`
